@@ -1,0 +1,45 @@
+:root {
+    --indent: 24px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--indent);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+input {
+    display: block;
+    max-width: 360px;
+    padding: 8px 16px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+/* Later I will eliminate these duplicated font styles: */
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+}
+
+.login-form > button {
+    max-width: fit-content;
+    padding: 8px 16px;
+    background-color: #4E75FF;
+    border-radius: 8px;
+    border-color: transparent;
+    font-size: inherit;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.login-form>button:hover {
+background-color: #6C8CFF;
+}

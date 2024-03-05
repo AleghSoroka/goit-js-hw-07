@@ -1,0 +1,13 @@
+.change-color {
+    max-width: fit-content;
+    padding: 8px 16px;
+    background-color: #4E75FF;
+    border-radius: 8px;
+    border-color: transparent;
+    font-size: inherit;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.change-color:hover {
+    background-color: #6C8CFF;
+}

@@ -1,0 +1,27 @@
+:root{
+    --indent: 24px;
+    --items: 3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: var(--indent);
+}
+
+.gallery .item{
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
+    overflow: hidden;
+}
+
+.item img {
+    display:block;
+    max-width: 100%;
+    object-fit: cover;
+}
