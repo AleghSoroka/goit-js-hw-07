@@ -30,8 +30,8 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 const markUp = images.map(({ url, alt }) => {
-  return `<li class="item">
-    <img src=${url} alt=${alt}>
+  return `<li class="gallery-item">
+    <img src=${url} alt=${alt} />
   </li>`
 })
   .join("");

@@ -15,12 +15,12 @@ ul {
     gap: var(--indent);
 }
 
-.gallery .item{
+.gallery .gallery-item{
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
     overflow: hidden;
 }
 
-.item img {
+.gallery-item img {
     display:block;
     max-width: 100%;
     object-fit: cover;

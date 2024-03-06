@@ -1,6 +1,6 @@
 const form = document.querySelector(".login-form");
-form.addEventListener("submit", submitHandler);
-function submitHandler(event) {
+form.addEventListener("submit", handleLoginFormSubmission);
+function handleLoginFormSubmission(event) {
     event.preventDefault();
     const elements = event.currentTarget.elements;
     const email = elements.email.value.trim();
@@ -10,7 +10,7 @@ function submitHandler(event) {
             email,
             password,
         }
-         console.dir(userData);
+         console.log(userData);
     }
     else {
         alert('All form fields must be filled in');
